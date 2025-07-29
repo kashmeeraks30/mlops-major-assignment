@@ -9,4 +9,4 @@ COPY src/utils.py .
 COPY src/predict.py .
 COPY models/ ./models/
 
-CMD ["python","src/predict.py"]
+CMD ["python","predict.py"]
