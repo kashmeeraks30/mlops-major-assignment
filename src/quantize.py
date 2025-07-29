@@ -56,8 +56,8 @@ def main():
     quantized_intercept = quantized_parameters[-1]
 
     quantized_param = {'coef': quantized_coef, 'intercept': quantized_intercept}
-    joblib.dump(quantized_param, 'models/manual_quant_params.joblib')
-    print(f"Size of manually quantized model: {(os.path.getsize('models/manual_quant_params.joblib')/1024):.2f} KB")
+    joblib.dump(quantized_param, 'models/quant_params.joblib')
+    print(f"Size of manually quantized model: {(os.path.getsize('models/quant_params.joblib')/1024):.2f} KB")
 
     #De-quantization
     quantized_params = np.append(quantized_coef, quantized_intercept)
