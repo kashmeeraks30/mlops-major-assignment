@@ -64,10 +64,6 @@ tests/test_train.py ...                                                         
 Step 4: Manual Quantization
 python src/quantize.py
 
-Coef:[ 0.85438303  0.12254624 -0.29441013  0.33925949 -0.00230772 -0.0408291
- -0.89692888 -0.86984178]
-Intercept:2.071946937378619
-
 Raw parameters saved as unquant_params.joblib!
 Size of original sklearn model: 0.40 KB
 Size of manually quantized model: 0.31 KB

@@ -29,9 +29,7 @@ def main():
 
     #Extracting the parameters 
     coef,intercept=extract_parameters(model)
-    print(f"Coef:{coef}")
-    print(f"Intercept:{intercept}")
-
+    
     # Raw parameters stored in a dictionary and saved as unquant_params.joblib
     unquantized_param = {'coef': coef, 'intercept': intercept}
     joblib.dump(unquantized_param, 'models/unquant_params.joblib')
